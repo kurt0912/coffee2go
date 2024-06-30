@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+        <!-- Material icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <!-- custom font  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;display=swap" rel="stylesheet">
+        <link rel="icon" href="images/image-icon-web.png">
+        <title>Coffee2Go</title>
+</head>
+<body>
+<!--Header Nav-->
+    <nav class="brown lighten-2">
+        <div class="container">
+        <div class="nav-wrapper">
+            <a href="#home" class="brand-logo right">
+                <img src="My Pictures/Logo 2.png" width="55" height="55">            
+            </a>
+            <a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger full hide-on-large-only">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="left hide-on-med-and-down">
+                <li>
+                    <a href="home.html">Home</a>
+                <li>
+                    <a href="">Coffees</a>
+                </li>
+                <li>
+                    <a href="">Pastries</a>
+                </li>
+            </ul>    
+        </div>
+        </div>
+        <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+    <li><a href="History.html" class="black-text">History</a></li>
+    <li><a href="about.html" class="black-text">About Us</a></li>
+    <li><a href="contact.html" class="black-text">Contact Us</a></li>
+  </ul>
+        <!-- Dropdown Trigger -->
+    <ul>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">More</a></li>
+      </ul>
+</nav>
+<div class="container">
+    <h3 class="red-text text-darken-3">About Us</h3>
+        <p>Welcome to Coffee2Go, where every cup tells a story. Established in 2024, our coffee shop has been a cornerstone of the community, bringing people together over their shared love for exceptional coffee and warm conversation. Our mission is simple: to provide a welcoming space where everyone can enjoy high-quality, sustainably sourced coffee.
+
+        At Coffee2Go, we believe that coffee is more than just a drink; it's an experience. That's why we carefully select our beans from the best coffee-growing regions around the world, ensuring that each cup is rich in flavor and ethically sourced. Our talented baristas are passionate about coffee and are dedicated to crafting the perfect brew for you, whether it's a classic espresso, a creamy cappuccino, or a trendy cold brew.    
+            
+        Community is at the heart of what we do. We host regular events, from open mic nights to art exhibits, creating a vibrant space where local artists and performers can showcase their talents. We also strive to make a positive impact on the environment by using eco-friendly practices and supporting sustainable coffee farming.
+            
+        Thank you for choosing Coffee2Go. We look forward to serving you and becoming your favorite spot for coffee and community.</p>
+
+        <img src="My Pictures/Coffee Shop 2.jpg" alt=""class="materialboxed responsive-img" data-caption="The Best Coffee Shop in Town">
+</div>
+
+<div style="height: 1000px;"></div>
+<!--Jquery CDN-->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+        $(document).ready(function() {
+        //Sidenav Init
+        $('.sidenav').sidenav({
+            edge:'right',
+            inDuration: 1000,
+            outDuration: 1000
+        });
+
+        //Dropdown Init
+        $('.dropdown-trigger').dropdown();
+        });
+</script>
+<script>
+    $(document).ready(function() {
+    //materialInit
+        $('.materialboxed').materialbox({
+            inDuration: 1000
+        });
+        //Slider Init
+        $('.slider').slider();
+    });
+</script>
+
+</body>
+</html>

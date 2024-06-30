@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+        <!-- Material icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <!-- custom font  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;display=swap" rel="stylesheet">
+        <link rel="icon" href="images/image-icon-web.png">
+        <title>Coffee2Go</title>
+</head>
+<body>
+<!--Header Nav-->
+    <nav class="brown lighten-2">
+        <div class="container">
+        <div class="nav-wrapper">
+            <a href="#home" class="brand-logo right">
+                <img src="My Pictures/Logo 2.png" width="55" height="55">            
+            </a>
+            <a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger full hide-on-large-only">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="left hide-on-med-and-down">
+                <li>
+                    <a href="home.html">Home</a>
+                <li>
+                    <a href="">Coffees</a>
+                </li>
+                <li>
+                    <a href="">Pastries</a>
+                </li>
+            </ul>    
+        </div>
+        </div>
+        <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+    <li><a href="History.html" class="black-text">History</a></li>
+    <li><a href="about.html" class="black-text">About Us</a></li>
+    <li><a href="contact.html" class="black-text">Contact Us</a></li>
+  </ul>
+        <!-- Dropdown Trigger -->
+    <ul>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">More</a></li>
+      </ul>
+</nav>
+
+<h1 class="center brown-text text-darken-4">Contact Coffee2Go</h1>
+<br>
+<p class="center">You can contact us through our social media accounts, email, and cellphone number.</p>
+<ul class="center">
+<i class="material-icons" style="color: #0a5ebe;">facebook</i>
+<p>www.facebook.com/coffee2go</p>
+<br>
+<i class="material-icons">instagram</i>
+<p>www.instagram.com/coffee2go</p>
+<br>
+<i class="material-icons" style="color: #bb3535;">email</i>
+<p>coffee2go@gmail.com</p>
+<br>
+<i class="material-icons" style="color:rgb(125, 104, 58)">phone</i>
+<p>0998-7654-321</p>
+</ul>
+
+<br>
+<h1 class="center">We're looking forward to see you in our little coffee shop!</h1>
+
+
+<div style="height: 1000px;"></div>
+<!--Jquery CDN-->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+        $(document).ready(function() {
+        //Sidenav Init
+        $('.sidenav').sidenav({
+            edge:'right',
+            inDuration: 1000,
+            outDuration: 1000
+        });
+
+        //Dropdown Init
+        $('.dropdown-trigger').dropdown();
+        });
+</script>
+</body>
+</html>

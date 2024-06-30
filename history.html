@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+        <!-- Material icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <!-- custom font  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;display=swap" rel="stylesheet">
+        <link rel="icon" href="images/image-icon-web.png">
+        <title>Coffee2Go</title>
+</head>
+<body>
+<!--Header Nav-->
+    <nav class="brown lighten-2">
+        <div class="container">
+        <div class="nav-wrapper">
+            <a href="#home" class="brand-logo right">
+                <img src="My Pictures/Logo 2.png" width="55" height="55">            
+            </a>
+            <a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger full hide-on-large-only">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="left hide-on-med-and-down">
+                <li>
+                    <a href="home.html">Home</a>
+                <li>
+                    <a href="">Coffees</a>
+                </li>
+                <li>
+                    <a href="">Pastries</a>
+                </li>
+            </ul>    
+        </div>
+        </div>
+        <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+    <li><a href="History.html" class="black-text">History</a></li>
+    <li><a href="about.html" class="black-text">About Us</a></li>
+    <li><a href="contact.html" class="black-text">Contact Us</a></li>
+  </ul>
+        <!-- Dropdown Trigger -->
+    <ul>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">More</a></li>
+      </ul>
+</nav>
+<br>
+<h1 class="center">THE HUMBLE BEGINNING OF COFFEE2GO</h1>
+<br>
+<ul class="center">
+<h3>The Origins of Coffee2Go</h3>
+<br>
+<div class="container">
+<p>In the bustling heart of Manila, amidst the cacophony of jeepneys and the vibrant hum of daily life, a new beacon for coffee lovers has emerged—Coffee2Go. This isn't just any coffee shop; it’s a testament to innovation, passion, and the rich tapestry of Filipino culture.</p>
+<h3>The Visionary Behind the Beans</h3>
+<br>
+<p>Coffee2Go was born from the dreams of Alon Reyes, a young entrepreneur with a deep love for coffee and an even deeper love for his country. Alon grew up in Batangas, where the aroma of freshly roasted barako beans filled the air, and the sight of coffee farmers working tirelessly in the fields was a daily reminder of the hard work and dedication behind every cup. After studying business in the United States and traveling through Europe, Alon returned to the Philippines with a mission: to bring world-class coffee to his homeland while supporting local farmers.</p>
+<h3>The Journey Begins</h3>
+<br>
+The journey of Coffee2Go started with a small, passionate team of baristas, each trained to perfection in the art of coffee making. The shop's philosophy was simple yet profound: to offer high-quality, ethically sourced coffee in a convenient, grab-and-go format. The menu boasts an array of options, from the robust barako brew to modern favorites like cold brew and espresso-based drinks, each meticulously crafted to highlight the unique flavors of Philippine coffee beans.</p>
+<br>
+<h3>A Space for Everyone</h3>
+<br>
+<p>Coffee2Go isn’t just about coffee; it’s about community. The shop's design reflects a blend of contemporary style and traditional Filipino elements, creating a warm, inviting atmosphere where everyone—from busy professionals to leisurely book readers—can find a moment of peace. Local artists were commissioned to decorate the space with murals depicting scenes from Filipino history and culture, making every visit a journey through the nation's rich heritage.</p>
+<br>
+<h3>Supporting Local Farmers</h3>
+<br>
+<p>Alon’s commitment to sustainability and fair trade is at the core of Coffee2Go. The shop partners directly with coffee farmers in Batangas, Benguet, and other coffee-growing regions in the Philippines, ensuring they receive fair compensation for their hard work. This partnership not only helps improve the livelihoods of the farmers but also ensures that customers enjoy the freshest, highest-quality coffee.</p>
+<br>
+<h3>A Growing Legacy</h3>
+<br>
+<p>Since its opening, Coffee2Go has quickly become a favorite spot for locals and tourists alike. Its success has inspired plans for expansion, with new branches set to open in other major cities across the Philippines. Each new shop will continue to uphold the values of quality, community, and sustainability that Coffee2Go was founded on.</p>
+<br>
+<h3>The Future of Coffee2Go</h3>
+<br>
+<p>As Coffee2Go continues to grow, Alon remains dedicated to his vision of a coffee shop that is not just a business but a celebration of Filipino culture and a support system for local farmers. With every cup served, Coffee2Go is brewing a brighter future for the Philippine coffee industry and creating a legacy that will be savored for generations to come.</p>
+</div>
+
+
+
+</ul>
+
+
+
+<div style="height: 1000px;"></div>
+<!--Jquery CDN-->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+        $(document).ready(function() {
+        //Sidenav Init
+        $('.sidenav').sidenav({
+            edge:'right',
+            inDuration: 1000,
+            outDuration: 1000
+        });
+
+        //Dropdown Init
+        $('.dropdown-trigger').dropdown();
+        });
+</script>
+</body>
+</html>
